@@ -2,7 +2,7 @@
 
 function php_backbone() {
   global $_PUT, $_DELETE, $_POST, $_GET;
-  // map global arrays, create unsupported by PHP PUT and DELETE
+  // map global arrays, also create $_PUT and $_DELETE (unsupported by PHP)
   $_PUT = array();
   $_DELETE = array();
   $method = strtoupper($_SERVER['REQUEST_METHOD']); 
@@ -17,7 +17,7 @@ function php_backbone() {
         $$variable = json_decode(file_get_contents('php://input'), true);
         break;
       default:
-        // unsupported methos, throw error?
+        // unsupported method, throw error?
     }
   } else {
     // Standard parsing for HTML Forms (application/x-www-form-urlencoded)
@@ -33,7 +33,7 @@ function php_backbone() {
         parse_str(file_get_contents('php://input'), $_DELETE);
         break;
       default:
-        // unsupported methos, throw error?
+        // unsupported method, throw error?
     }
   }
 }
