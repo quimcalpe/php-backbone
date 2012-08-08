@@ -4,7 +4,7 @@
 $_PUT = array();
 $_DELETE = array();
 $method = strtoupper($_SERVER['REQUEST_METHOD']); 
-if ( preg_match('/application\/json/i' ,$_SERVER['CONTENT_TYPE'])) {
+if ( preg_match('/application\/json/i', $_SERVER['CONTENT_TYPE']) ) {
   // if content is JSON, parse accordingly...
   switch ( $method ) {
     case "GET":
