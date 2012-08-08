@@ -5,7 +5,7 @@ PHP shim to work transparently with REST and JSON requests, enables support in P
 
 Usage:
 ```php
-require 'php-backbone.php';  // require php-backbone shim
+require_once 'php-backbone.php';  // require php-backbone shim
 
 // you can use now $_PUT, $_DELETE as you would expect
 
