@@ -7,17 +7,9 @@ Usage:
 ```php
 require 'php-backbone.php';  // require php-backbone shim
 
-php_backbone();  // trigger code
-
 // you can use now $_PUT, $_DELETE as you would expect
 
 ```
-
-
-Comments
-========
-
-You can extract the code outside the function so triggering becomes unnecessary.
 
 
 Caveats
