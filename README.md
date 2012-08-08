@@ -15,4 +15,4 @@ require_once 'php-backbone.php';  // require php-backbone shim
 Caveats
 =======
 
-$_PUT and $_DELETE variables are not PHP Superglobals, you need to use "global $_PUT, $_DELETE;" in your functions/methods as a normal global variable requires
+$_PUT and $_DELETE variables are not PHP Superglobals, you need to use "global $_PUT, $_DELETE;" in your functions/methods as a normal global variable would require.
