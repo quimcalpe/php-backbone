@@ -1,6 +1,6 @@
 <?php
 
-// create $_PUT and $_DELETE globals (unsupported by PHP)
+// create $_PUT and $_DELETE globals
 $_PUT = array();
 $_DELETE = array();
 $method = strtoupper($_SERVER['REQUEST_METHOD']); 
@@ -22,7 +22,7 @@ if ( preg_match('/application\/json/i', $_SERVER['CONTENT_TYPE']) ) {
   switch ( $method ) {
     case "GET":
     case "POST":
-      // nothing to do, PHP parsed normally
+      // nothing to do, PHP parses normally
       break;
     case "PUT":
       parse_str(file_get_contents('php://input'), $_PUT);
