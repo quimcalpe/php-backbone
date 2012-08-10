@@ -1,7 +1,7 @@
 php-backbone
 ============
 
-PHP shim to work transparently with REST and JSON requests, enables support in PHP for Backbone default behaviour. In other words, no need to use Backbone.emulateHTTP nor Backbone.emulateJSON flags for legacy servers.
+PHP shim to work transparently with REST and JSON requests, enables support in PHP for Backbone default behaviour. In other words, no need to use `Backbone.emulateHTTP=true;` nor `Backbone.emulateJSON=true;` flags for legacy servers.
 
 Usage
 =====
